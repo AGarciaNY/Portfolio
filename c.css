@@ -27,5 +27,5 @@
     animation: inner-circle 10s linear infinite;
 }
 .ca{
-    overflow: auto;
+    margin: 10px
 }

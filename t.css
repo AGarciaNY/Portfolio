@@ -1,32 +1,50 @@
-#cercolescenter{
-    height:500px;
-    width: 500px
-}
-@keyframes circle {
-    from { transform:rotate(0deg); }
-    to { transform:rotate(360deg); }
+.saturn {
+    
+    /* 
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    left: 315px;
+    top: 143px;
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific 
+     * prefixes as well as the official syntax for now. Remember, tools like 
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+            animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
 }
 
-@keyframes inner-circle {
-    from { transform:rotate(0deg); }
-    to { transform:rotate(-360deg); }
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-#cercolescenter > .ca {
-    width:10px;
-    height:10px;
-    margin: 20px auto 0;
-    color:orange;
-    font-size:100px;
-    line-height:1;
-    animation: circle 10s linear infinite;
-    transform-origin:50% 100px;
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-.ca > .ca {
-    animation: inner-circle 10s linear infinite;
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
-.ca{
-    margin: 10px;
 
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }

@@ -51,6 +51,10 @@ html,body{
     height: 400px;
     width: 100%;
 }
+#cercolescenter{
+    height:500px;
+    width: 500px
+}
 @keyframes circle {
     from { transform:rotate(0deg); }
     to { transform:rotate(360deg); }
@@ -61,17 +65,20 @@ html,body{
     to { transform:rotate(-360deg); }
 }
 
-body > .ca {
-    width:100px;
-    height:100px;
-    margin: 20px auto 0;
+#cercolescenter > .ca {
+    width:10px;
+    height:10px;
     color:orange;
     font-size:100px;
     line-height:1;
-    animation: circle 5s linear infinite;
-    transform-origin:50% 200px;
+    animation: circle 10s linear infinite;
+    transform-origin:50% 100px;
 }
 
 .ca > .ca {
-    animation: inner-circle 5s linear infinite;
+    animation: inner-circle 10s linear infinite;
+}
+.ca{
+    margin: 10px;
+
 }
