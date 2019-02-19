@@ -1,31 +1,223 @@
-#cercolescenter{
-    height:500px;
-    width: 500px
-}
-@keyframes circle {
-    from { transform:rotate(0deg); }
-    to { transform:rotate(360deg); }
+
+
+.ferris_wheel ,.wheel {
+  border: 6px ;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
 }
 
-@keyframes inner-circle {
-    from { transform:rotate(0deg); }
-    to { transform:rotate(-360deg); }
+.ferris_wheel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1.4, 1.4);
+  border: 0;
 }
 
-#cercolescenter > .ca {
-    width:10px;
-    height:10px;
-    margin: 20px auto 0;
-    color:orange;
-    font-size:100px;
-    line-height:1;
-    animation: circle 10s linear infinite;
-    transform-origin:50% 100px;
+.wheel_wrap {
+  position: absolute;
+  animation: wheel_rotate 40s infinite linear;
 }
 
-.ca > .ca {
-    animation: inner-circle 10s linear infinite;
+.wheel:before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  z-index: 1;
 }
-.ca{
-    margin: 10px
+
+.wheel:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.wheel span:nth-child(1):before {
+  content: "";
+  border-bottom: 2px ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  left: 6px;
+}
+
+.wheel span:nth-child(1):after {
+  content: "";
+  border-right: 2px  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  top: 6px;
+  left: 50%;
+  transform: rotate(45deg);
+}
+
+.wheel span:nth-child(2):before {
+  content: "";
+  border-right: 3px  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  top: 5px;
+  left: 50%;
+  transform: rotate(-45deg);
+}
+
+.wheel span:nth-child(2):after {
+  content: "";
+  border-right: 2px  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  top: 6px;
+  left: 50%;
+}
+
+div.stand:before,
+div.stand:after {
+  content: "";
+  position: absolute;
+  border-right: 4px  ;
+  height: 120px;
+  transform: rotate(15deg);
+  top: 88px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+div.stand:after {
+  transform: rotate(-15deg);
+  margin-left: 23px;
+}
+
+
+@keyframes wheel_rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.buckets {
+  position: absolute;
+  border: 6px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.buckets div {
+  position: absolute;
+  animation: bucket_rotate 40s infinite linear;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+}
+
+.buckets div:before {
+  content: "";
+  height: 13px;
+  left: 9px;
+  border-right: 1px solid ;
+  position: absolute;
+  top: -12px;
+  transform: rotate(30deg);
+}
+
+.buckets div:after {
+  content: "";
+  height: 13px;
+  border-right: 1px solid ;
+  position: absolute;
+  right: 10px;
+  transform: rotate(-30deg);
+  top: -12px;
+}
+
+.buckets span {
+  display: inline-block;
+  border-top: 15px ;
+  border-left: 3px ;
+  border-right: 3px;
+  height: 0;
+  width: 20px;
+  position: relative;
+}
+
+.buckets span:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 3px;
+  width: 25px;
+  left: -2px;
+}
+
+.buckets span:after {
+  content: "";
+  height: 5px;
+  left: -2px;
+  width: 25px;
+  position: absolute;
+  top: -12px;
+}
+
+@keyframes bucket_rotate {
+  0% { 
+    transform: rotate(0) translateX(150px) rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg) translateX(150px) rotate(-360deg); 
+  }
+}
+
+.buckets div:nth-child(2) {
+  animation-delay: -4.8s;
+}
+
+.buckets div:nth-child(3) {
+  animation-delay: -9.9s;
+}
+
+.buckets div:nth-child(4) {
+  animation-delay: -15s;
+}
+
+.buckets div:nth-child(5) {
+  animation-delay: -20s;
+}
+
+.buckets div:nth-child(6) {
+  animation-delay: -25s;
+}
+
+.buckets div:nth-child(7) {
+  animation-delay: -30s;
+}
+
+.buckets div:nth-child(8) {
+  animation-delay: -35s;
 }
