@@ -1,4 +1,6 @@
-
+#fweell{
+  height:900px;
+}
 
 .ferris_wheel ,.wheel {
   border: 6px ;
@@ -10,7 +12,7 @@
 .ferris_wheel {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%) translateY(-50%) scale(1.4, 1.4);
   border: 0;
 }
@@ -62,7 +64,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 150px;
+  height: 200px;
   top: 6px;
   left: 50%;
   transform: rotate(45deg);
@@ -98,7 +100,7 @@ div.stand:after {
   border-right: 4px  ;
   height: 120px;
   transform: rotate(15deg);
-  top: 88px;
+  top: 18px;
   left: 50%;
   margin-left: -15px;
 }
@@ -122,8 +124,8 @@ div.stand:after {
 .buckets {
   position: absolute;
   border: 6px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -187,10 +189,10 @@ div.stand:after {
 
 @keyframes bucket_rotate {
   0% { 
-    transform: rotate(0) translateX(150px) rotate(0); 
+    transform: rotate(0) translateX(200px) rotate(0); 
   }
   100% { 
-    transform: rotate(360deg) translateX(150px) rotate(-360deg); 
+    transform: rotate(360deg) translateX(200px) rotate(-360deg); 
   }
 }
 
@@ -220,4 +222,18 @@ div.stand:after {
 
 .buckets div:nth-child(8) {
   animation-delay: -35s;
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
