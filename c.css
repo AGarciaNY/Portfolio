@@ -1,239 +1,57 @@
-#fweell{
-  height:900px;
+.projimg{
+  height:80px;
 }
-
-.ferris_wheel ,.wheel {
-  border: 6px ;
-  width: 150px;
-  height: 150px;
-  border-radius: 80%;
-}
-
-.ferris_wheel {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translateX(-50%) translateY(-50%) scale(1.4, 1.4);
-  border: 0;
-}
-
-.wheel_wrap {
-  position: absolute;
-  animation: wheel_rotate 40s infinite linear;
-}
-
-.wheel:before {
-  content: "";
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  margin-left: -25px;
-  margin-top: -25px;
-  z-index: 1;
-}
-
-.wheel:after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -12px;
-  margin-left: -12px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.wheel span:nth-child(1):before {
-  content: "";
-  border-bottom: 2px ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  left: 6px;
-}
-
-.wheel span:nth-child(1):after {
-  content: "";
-  border-right: 2px  ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 200px;
-  top: 6px;
-  left: 50%;
-  transform: rotate(45deg);
-}
-
-.wheel span:nth-child(2):before {
-  content: "";
-  border-right: 3px  ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
-  top: 5px;
-  left: 50%;
-  transform: rotate(-45deg);
-}
-
-.wheel span:nth-child(2):after {
-  content: "";
-  border-right: 2px  ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
-  top: 6px;
-  left: 50%;
-}
-
-div.stand:before,
-div.stand:after {
-  content: "";
-  position: absolute;
-  border-right: 4px  ;
-  height: 120px;
-  transform: rotate(15deg);
-  top: 18px;
-  left: 50%;
-  margin-left: -15px;
-}
-
-div.stand:after {
-  transform: rotate(-15deg);
-  margin-left: 23px;
-}
-
-
-@keyframes wheel_rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-.buckets {
-  position: absolute;
-  border: 6px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  z-index: 1;
+.p{
+  font-size: 12px
 }
 
 .buckets div {
   position: absolute;
-  animation: bucket_rotate 40s infinite linear;
+  animation: bucket_rotate 200s infinite linear;
   top: 50%;
   left: 50%;
-  margin-top: -13px;
-  margin-left: -13px;
-}
-
-.buckets div:before {
-  content: "";
-  height: 13px;
-  left: 9px;
-  border-right: 1px solid ;
-  position: absolute;
-  top: -12px;
-  transform: rotate(30deg);
-}
-
-.buckets div:after {
-  content: "";
-  height: 13px;
-  border-right: 1px solid ;
-  position: absolute;
-  right: 10px;
-  transform: rotate(-30deg);
-  top: -12px;
-}
-
-.buckets span {
-  display: inline-block;
-  border-top: 15px ;
-  border-left: 3px ;
-  border-right: 3px;
-  height: 0;
-  width: 20px;
-  position: relative;
-}
-
-.buckets span:before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  height: 3px;
-  width: 25px;
-  left: -2px;
-}
-
-.buckets span:after {
-  content: "";
-  height: 5px;
-  left: -2px;
-  width: 25px;
-  position: absolute;
-  top: -12px;
 }
 
 @keyframes bucket_rotate {
   0% { 
-    transform: rotate(0) translateX(200px) rotate(0); 
+    transform: rotate(0) translateX(350px) rotate(0); 
   }
-  100% { 
-    transform: rotate(360deg) translateX(200px) rotate(-360deg); 
+  70% { 
+    transform: rotate(350deg) translateX(350px) rotate(-360deg); 
   }
 }
 
 .buckets div:nth-child(2) {
-  animation-delay: -4.8s;
+  animation-delay: -25s;
+  width: 130px
 }
 
 .buckets div:nth-child(3) {
-  animation-delay: -9.9s;
+  animation-delay: -50s;
+  width: 130px
 }
 
 .buckets div:nth-child(4) {
-  animation-delay: -15s;
+  animation-delay: -75s;
+  width: 130px
 }
 
 .buckets div:nth-child(5) {
-  animation-delay: -20s;
+  animation-delay: -100s;
+  width: 130px
 }
 
 .buckets div:nth-child(6) {
-  animation-delay: -25s;
+  animation-delay: -125s;
+  width: 130px
 }
 
 .buckets div:nth-child(7) {
-  animation-delay: -30s;
+  animation-delay: -150s;
+  width: 130px
 }
 
 .buckets div:nth-child(8) {
-  animation-delay: -35s;
-}
-.zoom {
-  padding: 50px;
-  transition: transform .2s;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-
-.zoom:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+  animation-delay: -175s;
+  width: 130px
 }
