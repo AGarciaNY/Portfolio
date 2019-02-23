@@ -54,7 +54,7 @@ html,body{
 }
 .projectinfo{
     width: 210px;
-    background: linear-gradient(to right, lightyellow, lightblue, gray);
+    background: linear-gradient(to right, lightyellow, lightblue, #c3cbd8);
 }
 .projimg{
   width:220px;
@@ -127,4 +127,14 @@ html,body{
 }
 .separater{
   height:20%;
+}
+.zoom {
+  transition: transform 10s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
