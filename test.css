@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, lightgreen, #12d8fa, pink);
+    background: linear-gradient(to right, lightgreen, #12d8fa, orange);
 }
 html,body{
     height:100%;
@@ -54,7 +54,7 @@ html,body{
 }
 .projectinfo{
     width: 210px;
-    background: linear-gradient(to right, lightyellow, lightblue, #ff2f21);
+    background: linear-gradient(to right, lightyellow, lightblue, gray);
 }
 .projimg{
   width:220px;
@@ -64,7 +64,7 @@ html,body{
 }
 .p{
   font-size: 12px;
-  background: linear-gradient(to right, lightyellow, lightblue, pink);
+  background: linear-gradient(to right, lightyellow, lightblue, #c3cbd8);
   border: 1px solid red;
   padding: 10px;
   border-radius: 25px;
