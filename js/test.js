@@ -1,1 +1,25 @@
 /*global $*/
+$(".pigla").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
+$(".rockp").click(function(){
+    window.location.assign("https://kingaldair.github.io/advanced_rockpaperscissors_startercode/");
+});
+$(".gifs").click(function(){
+    window.location.assign("https://agarciany.github.io/gif/");
+});
+$(".child4").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
+$(".child5").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
+$(".child6").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
+$(".child7").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
+$(".child8").click(function(){
+    window.location.assign("https://agarciany.github.io/piglaten/");
+});
