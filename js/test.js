@@ -11,8 +11,8 @@ $(".gifs").click(function(){
 $(".hagman").click(function(){
     window.location.assign("https://kingaldair.github.io/unit13HangmanStarterCode/");
 });
-$(".child5").click(function(){
-    window.location.assign("https://agarciany.github.io/piglaten/");
+$(".helpingyou").click(function(){
+    window.location.assign("https://kingaldair.github.io/helping-you/");
 });
 $(".child6").click(function(){
     window.location.assign("https://agarciany.github.io/piglaten/");
