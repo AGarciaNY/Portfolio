@@ -18,7 +18,7 @@ $(".child6").click(function(){
     window.location.assign("https://agarciany.github.io/piglaten/");
 });
 $(".child7").click(function(){
-    window.location.assign("https://agarciany.github.io/piglaten/");
+    window.location.assign("https://kingaldair.github.io/sidescroll-game/");
 });
 $(".child8").click(function(){
     window.location.assign("https://agarciany.github.io/piglaten/");
