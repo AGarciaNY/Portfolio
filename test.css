@@ -84,9 +84,10 @@ html,body{
     transform: rotate(0) translateX(500px) rotate(0); 
   }
   70% { 
-    transform: rotate(350deg) translateX(500px) rotate(-360deg); 
+    transform: rotate(30deg) translateX(500px) rotate(-360deg); 
   }
 }
+
 .buckets div:nth-child(1){
   width: 200px;
   
@@ -127,14 +128,4 @@ html,body{
 }
 .separater{
   height:20%;
-}
-.zoom {
-  transition: transform 10s;
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
 }
