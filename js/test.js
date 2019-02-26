@@ -14,12 +14,12 @@ $(".hagman").click(function(){
 $(".helpingyou").click(function(){
     window.location.assign("https://kingaldair.github.io/helping-you/");
 });
-$(".child6").click(function(){
-    window.location.assign("https://agarciany.github.io/piglaten/");
+$(".didor").click(function(){
+    window.location.assign("https://jalvarez2016.github.io/disorderhelper/");
 });
-$(".child7").click(function(){
+$(".mario").click(function(){
     window.location.assign("https://kingaldair.github.io/sidescroll-game/");
 });
-$(".child8").click(function(){
-    window.location.assign("https://agarciany.github.io/piglaten/");
+$(".school").click(function(){
+    window.location.assign("https://jalvarez2016.github.io/Compture-science-class/");
 });
