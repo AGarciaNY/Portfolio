@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, lightgreen, #12d8fa, orange);
+    background: linear-gradient(to right, silver, white, gray);
 }
 html,body{
     height:100%;
@@ -14,7 +14,7 @@ html,body{
     padding-bottom: 100px;
 }
 #footer{
-    background-color: #C0C0C0;
+    background:linear-gradient(transparent,black,black,black);
     position: absolute;
     width: 100%;
     margin-top: -100px;
@@ -32,7 +32,7 @@ html,body{
   position: relative;
 }
 #navv{
-  background-color: #C0C0C0;
+  background:linear-gradient(black,transparent);
 }
 .fontc{
   color:white;
@@ -84,7 +84,7 @@ html,body{
     transform: rotate(0) translateX(500px) rotate(0); 
   }
   70% { 
-    transform: rotate(30deg) translateX(500px) rotate(-360deg); 
+    transform: rotate(350deg) translateX(500px) rotate(-360deg); 
   }
 }
 

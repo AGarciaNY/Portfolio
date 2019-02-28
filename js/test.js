@@ -1,25 +1,25 @@
 /*global $*/
 $(".pigla").click(function(){
-    window.location.assign("https://agarciany.github.io/piglaten/");
+    window.open("https://agarciany.github.io/piglaten/");
 });
 $(".rockp").click(function(){
-    window.location.assign("https://kingaldair.github.io/advanced_rockpaperscissors_startercode/");
+    window.open("https://kingaldair.github.io/advanced_rockpaperscissors_startercode/");
 });
 $(".gifs").click(function(){
-    window.location.assign("https://agarciany.github.io/gif/");
+    window.open("https://agarciany.github.io/gif/");
 });
 $(".hagman").click(function(){
-    window.location.assign("https://kingaldair.github.io/unit13HangmanStarterCode/");
+    window.open("https://kingaldair.github.io/unit13HangmanStarterCode/");
 });
 $(".helpingyou").click(function(){
-    window.location.assign("https://kingaldair.github.io/helping-you/");
+    window.open("https://kingaldair.github.io/helping-you/");
 });
 $(".didor").click(function(){
-    window.location.assign("https://jalvarez2016.github.io/disorderhelper/");
+    window.open("https://jalvarez2016.github.io/disorderhelper/");
 });
 $(".mario").click(function(){
-    window.location.assign("https://kingaldair.github.io/sidescroll-game/");
+    window.open("https://kingaldair.github.io/sidescroll-game/");
 });
 $(".school").click(function(){
-    window.location.assign("https://jalvarez2016.github.io/Compture-science-class/");
+    window.open("https://jalvarez2016.github.io/Compture-science-class/");
 });
