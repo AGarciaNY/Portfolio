@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, silver, white, gray);
+    color:white;
+    font-family: 'Poiret One', cursive;
 }
 html,body{
     height:100%;
@@ -23,9 +25,24 @@ html,body{
   text-align: center;
   
 }
+
 #finfo{
   display: flex;
   align-items: center;
+}
+#cn a {
+  color: white;
+  text-decoration: none;
+}
+.cnfl{
+  float: left;
+  padding: 5px;
+  
+}
+.CNimg{
+  height:100px;
+  position: relative;
+  right: 1px;
 }
 .in{
   width: 33.333%;
@@ -81,10 +98,10 @@ html,body{
 
 @keyframes bucket_rotate {
   0% { 
-    transform: rotate(0) translateX(50%) rotate(0); 
+    transform: rotate(0) translateX(500px) rotate(0); 
   }
-  70% { 
-    transform: rotate(350deg) translateX(50%) rotate(-360deg); 
+  70% {
+    transform: rotate(350deg) translateX(500px) rotate(-360deg); 
   }
 }
 

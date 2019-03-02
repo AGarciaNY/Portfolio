@@ -1,0 +1,41 @@
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: linear-gradient(transparent,black,black,black);
+   color: white;
+   font-family: 'Poiret One', cursive;
+   
+}
+#footerheading{
+    text-align: center;
+}
+#footerrow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footercontent{
+    width: 33%;
+}
+#CNlogo{
+    height:60px;
+    display: flex;
+    align-items: center;
+}
+.CNimg{
+    height:50px;
+}
+.CNlogo{
+    height:30px;
+}
+.imgheight{
+    position: absolute;
+    left:60px;
+}
+.cnend{}
+#CNlink a{
+    color: white;
+    text-decoration: none;
+}
