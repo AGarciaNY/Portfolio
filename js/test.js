@@ -14,7 +14,7 @@ $(".hagman").click(function(){
 $(".helpingyou").click(function(){
     window.open("https://kingaldair.github.io/helping-you/");
 });
-$(".didor").click(function(){
+$(".disor").click(function(){
     window.open("https://jalvarez2016.github.io/disorderhelper/");
 });
 $(".mario").click(function(){
