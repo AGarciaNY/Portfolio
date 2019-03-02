@@ -15,45 +15,8 @@ html,body{
     overflow: auto;
     padding-bottom: 100px;
 }
-#footer{
-    background:linear-gradient(transparent,black,black,black);
-    position: absolute;
-    width: 100%;
-    margin-top: -100px;
-}
-.fone{
-  text-align: center;
-  
-}
-
-#finfo{
-  display: flex;
-  align-items: center;
-}
-#cn a {
-  color: white;
-  text-decoration: none;
-}
-.cnfl{
-  float: left;
-  padding: 5px;
-  
-}
-.CNimg{
-  height:100px;
-  position: relative;
-  right: 1px;
-}
-.in{
-  width: 33.333%;
-  position: relative;
-}
 #navv{
   background:linear-gradient(black,transparent);
-}
-.fontc{
-  color:white;
-  font-family: 'Poiret One', cursive;
 }
 .row{
     width: 100%;

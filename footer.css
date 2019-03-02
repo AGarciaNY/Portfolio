@@ -1,9 +1,9 @@
 #footer {
-   position: fixed;
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
-   background: linear-gradient(transparent,black,black,black);
+   background: linear-gradient(transparent,#484848,black,black);
    color: white;
    font-family: 'Poiret One', cursive;
    
@@ -30,12 +30,10 @@
 .CNlogo{
     height:30px;
 }
-.imgheight{
-    position: absolute;
-    left:60px;
-}
-.cnend{}
 #CNlink a{
     color: white;
     text-decoration: none;
+}
+.CNinfo{
+    width: 50%;
 }
