@@ -23,3 +23,9 @@ $(".mario").click(function(){
 $(".school").click(function(){
     window.open("https://jalvarez2016.github.io/Compture-science-class/");
 });
+$("#navbutton").click(function() {
+    var number=0;
+    var timescliked=number+1;
+    console.log(timescliked);
+    $("#navv").css("height","200px");
+})
