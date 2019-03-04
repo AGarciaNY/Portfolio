@@ -1,6 +1,15 @@
 #navv{
-background:-webkit-linear-gradient(black, transparent);
-
+    background:-webkit-linear-gradient(black,#4c4c4c, transparent);
+    font-family: 'Merienda One', cursive;
+}
+.navname{
+    color: white;
+}
+.fontc{
+    color:white;
+}
+.navname{
+    height:70px;
 }
 #navbutton{
     background:linear-gradient(gray,white,gray);
