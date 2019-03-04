@@ -1,10 +1,10 @@
 #navv{
     background:-webkit-linear-gradient(black,#4c4c4c, transparent);
     font-family: 'Merienda One', cursive;
+    position: absolute;
+    width: 100%;
 }
-.navname{
-    color: white;
-}
+
 .fontc{
     color:white;
 }
