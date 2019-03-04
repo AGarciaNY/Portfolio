@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+        <link   rel="stylesheet" type="text/css" href="nav.css" >
         <link  rel="stylesheet" type="text/css" href="main.css">
         <link  rel="stylesheet" type="text/css" href="footer.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -11,15 +13,14 @@
         </head>
     <body>
         
-        <div id="container">
-            <div class="main">
-                <nav class="navbar navbar-toggleable-md navbar-light bg-faded"  id="navv">
-                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="container">
+              <nav class="navbar-toggleable-md navbar-light bg-faded fontc"  id="navv">
+                  <button class="navbar-toggler navbar-toggler-right" id="navbutton" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <p class="navbar-brand" style="text-shadow: 3px 2px black; color:white;">Aldair Portfolio</p>
+                  <p class="navbar-brand"><h3 class="navname">Aldair's Portfolio</h3></p>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav navdata">
                       <li class="nav-item active">
                         <a class="nav-link" href="index.html"><p class="fontc">Home</p> <span class="sr-only">(current)</span></a>
                       </li>
@@ -30,8 +31,8 @@
                         <a class="nav-link" href="proj.html"><p class="fontc">Projects</p></a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fontc" href="http://example.com" id="navbarDropdownMenuLink" style="color:white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown link
+                        <a class="nav-link dropdown-toggle fontc" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <p class="fontc">Dropdown link</p>
                            </a>
                         <div class="dropdown-menu fontc" aria-labelledby="navbarDropdownMenuLink">
                           <a class="dropdown-item" href="#">Action</a>
@@ -42,7 +43,11 @@
                     </ul>
                   </div>
                 </nav>
+            </div>    
         <!--carasel-->
+                <div style="height:150px;">
+                  
+                </div>
                 <div class="row">
                   <div id="carouselExampleIndicators" class="carousel slide imgss" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -71,9 +76,6 @@
                     </a>
                   </div>
                 </div>
-                
-<!--end--></div>
-        </div>
     
         
         <div id="footer">

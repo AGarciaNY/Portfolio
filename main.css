@@ -8,14 +8,6 @@ body {
 html,body{
     height:100%;
 }
-
-#main{
-    overflow: auto;
-    padding-bottom: 100px;
-}
-#navv{
-  background:linear-gradient(black,transparent);
-}
 .row{
     width: 100%;
     margin-right: 10px;
@@ -106,4 +98,7 @@ html,body{
 }
 .separater{
   height:20%;
+}
+#body{
+  height:700px;
 }

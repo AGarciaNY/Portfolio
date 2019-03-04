@@ -1,7 +1,9 @@
 #navv{
     background:-webkit-linear-gradient(black,#4c4c4c, transparent);
     font-family: 'Merienda One', cursive;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top:0;
     width: 100%;
 }
 
@@ -10,7 +12,17 @@
 }
 .navname{
     height:70px;
+    width: 300px
 }
 #navbutton{
     background:linear-gradient(gray,white,gray);
+}
+.navdata{
+    width: 500px;
+    position: fixed;
+    top:30px;
+    left:300px;
+}
+.navseparater{
+    height:150;
 }
