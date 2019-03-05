@@ -2,25 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, silver, white, gray);
-    color:white;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Merienda One', cursive;
 }
 html,body{
     height:100%;
-}
-.row{
-    width: 100%;
-    margin-right: 10px;
-    margin-left:  10px; 
-}
-.imgss{
-    margin: auto;
-    width:40%;
-}
-.smaller{
-    position: inherit;
-    height: 400px;
-    width: 100%;
 }
 .projectinfo{
     width: 210px;
@@ -34,6 +19,7 @@ html,body{
 }
 .p{
   font-size: 12px;
+  color:black;
   background: linear-gradient(to right, lightyellow, lightblue, #c3cbd8);
   border: 1px solid red;
   padding: 10px;
@@ -51,10 +37,10 @@ html,body{
 
 @keyframes bucket_rotate {
   0% { 
-    transform: rotate(0) translateX(500px) rotate(0); 
+    transform: rotate(0) translateX(550px) rotate(0); 
   }
   70% {
-    transform: rotate(350deg) translateX(500px) rotate(-360deg); 
+    transform: rotate(350deg) translateX(550px) rotate(-360deg); 
   }
 }
 
@@ -101,4 +87,52 @@ html,body{
 }
 #body{
   height:700px;
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: slideimg;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slideimg {
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
+
+@keyframes slideimg {
+  from {opacity: .4;} 
+  to {opacity: 1;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px;}
 }
