@@ -7,6 +7,9 @@ body {
 html,body{
     height:100%;
 }
+.fontst{
+  font-family: 'Merienda One', cursive;
+}
 .projectinfo{
     width: 210px;
     background: linear-gradient(to right, lightyellow, lightblue, #c3cbd8);
@@ -137,5 +140,8 @@ img {vertical-align: middle;}
   .text {font-size: 11px;}
 }
 .smaller{
-  height: 200px;
+  height: 400px;
+}
+.abouttitel{
+  text-align: center
 }
