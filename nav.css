@@ -67,6 +67,7 @@
 
 .dropdown-content a:hover {
   background: linear-gradient(silver,gray,silver);
+  border-radius: 20%;
   
 }
 
