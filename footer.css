@@ -18,6 +18,7 @@
 }
 .footercontent{
     width: 33%;
+    height: 200px;
 }
 #CNlogo{
     height:60px;
@@ -36,4 +37,10 @@
 }
 .CNinfo{
     width: 50%;
+}
+#viwercoment{
+    font-size: 10px;
+    width: 80%;
+    height:100px;
+    resize: none;
 }
