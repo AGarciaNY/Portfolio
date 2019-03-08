@@ -38,8 +38,14 @@
 .CNinfo{
     width: 50%;
 }
-#viwercoment{
-    font-size: 10px;
+#viewername{
+    font-size: 12px;
+}
+#viewermail{
+    font-size: 12px;
+}
+#viewercoment{
+    font-size: 12px;
     width: 80%;
     height:100px;
     resize: none;
