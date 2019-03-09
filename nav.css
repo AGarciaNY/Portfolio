@@ -77,3 +77,7 @@
 .navseparater{
     height:150px;
 }
+#myAudio{
+  position: absolute;
+  top:120px;
+}

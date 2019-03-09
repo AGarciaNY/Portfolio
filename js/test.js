@@ -85,11 +85,3 @@ $("#submit").click(function(){
         })
 }   
     );
-var audio,playbtn,seek_bar;
-function initAdudioPlayer(){
-    audio=new Audio();
-    audio.src="music/theme.mp3";
-    audio.loop=true;
-    audio.play();
-}
-window.addEventListener("load".initAdudioPlayer);
