@@ -148,3 +148,8 @@ img {vertical-align: middle;}
 .portfoliopic{
   border-radius: 50%;
 }
+#commentpage{
+  height:100%;
+  width: 100%;
+  background: linear-gradient(#8CEBFF);
+}
