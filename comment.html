@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="footer.css">
         <script src="js/test.js" type="module"></script>
+        <script src="js/music.js" type="module"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
     <body  id="commentpage">
@@ -15,7 +16,32 @@
         
         <div id="grass">
         <div id="sun">
-            <div id="commentbox">
+            <div>
+                <nav class="fontc"  id="navv">
+                 <p><h3 class="navname">Aldair's Portfolio</h3></p>
+                 <div class="navdata">
+                    <ul id="hpnav">
+                        <li class="navitems"><a href="index.html">Home</a></li>
+                        <li class="navitems"><a href="about.html">About Me</a></li>
+                        <li class="navitems"><a href="proj.html">Projects</a></li>
+                        <li class="navitems dropdown">
+                        <a class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content">
+                          <a  href="#">Comment here</a>
+                          <a class="playstop">Play or Stop music></a>
+                          <a  href="#">a</a>
+                        </div>
+                     </li>
+                    </ul>
+                </div>
+                </nav>
+             </div>
+             <audio id="myAudio" autoplay loop>
+             <source src="music/theme.mp3" type="audio/mpeg">
+             </audio>
+              
+             <div id="commentbox">
+                 <div style="width:100%;height:100px;"></div>
                 <h5>Add a comment below</h5>
                 <div>
                     <p>Name-> <input id="viewername" type="text" name="" placeholder="Name"></p>
@@ -30,15 +56,9 @@
                     <textarea id="viewercoment" placeholder="cooment here"></textarea>
                 </div>
             </div>
-            <audio id="myAudio" controls autoplay loop>
-              <source src="music/thene.ogg" type="audio/ogg">
-              <source src="music/theme.mp3" type="audio/mpeg">
-            </audio>
-               
-               
        
-        </div>
-        </div>
+            </div>
+            </div>
         
         
         

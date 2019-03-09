@@ -4,13 +4,11 @@
 var x = document.getElementById("myAudio");
 
 function enableControls() { 
-  x.controls = true;
-  x.load();
+  x.pause();
 } 
 
 function disableControls() { 
-  x.controls = false;
-  x.load();
+  x.play();
 } 
  
 var clicknumber=0;

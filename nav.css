@@ -66,8 +66,10 @@
 }
 
 .dropdown-content a:hover {
+  text-decoration: none;
   background: linear-gradient(silver,gray,silver);
   border-radius: 20%;
+  
   
 }
 
@@ -76,8 +78,4 @@
 }
 .navseparater{
     height:150px;
-}
-#myAudio{
-  position: absolute;
-  top:120px;
 }

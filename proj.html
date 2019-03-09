@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="footer.css">
         <script src="js/test.js" type="module"></script>
+        <script src="js/music.js" type="module"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
     <body>
@@ -22,15 +23,19 @@
                       <li class="navitems dropdown">
                         <a class="dropbtn">Dropdown</a>
                         <div class="dropdown-content">
-                          <a href="comment.html">Comment here</a>
-                          <a href="#">a</a>
-                          <a href="#">a</a>
+                          <a  href="comment.html">Comment here</a>
+                          <a class="playstop">Play or Stop music</a>
+                          <a  href="#">a</a>
                         </div>
                      </li>
                     </ul>
                   </div>
                 </nav>
-             </div>
+              </div>
+              <audio id="myAudio" autoplay loop>
+              <source src="music/theme.mp3" type="audio/mpeg">
+              </audio>
+              <div style="width:100%;height:200px;"></div>
             <div class="navseparater"></div>
             <h3 class="projectinfo">Hi, its me aigen. Feel free to explore some of the projects I have worked on with my freinds and on my own. Just click on the images and you'll be there</h3>
             <div id="body">
