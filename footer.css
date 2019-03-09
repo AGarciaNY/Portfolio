@@ -65,3 +65,11 @@
     height:100px;
     resize: none;
 }
+#commentbox{
+    position: absolute;
+    height:400px;
+    width: 500px;
+    left:20px;
+    top:100px;
+    
+}

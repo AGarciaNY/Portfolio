@@ -37,11 +37,10 @@
                 </nav>
              </div>
              <audio id="myAudio" autoplay loop>
-             <source src="music/theme.mp3" type="audio/mpeg">
+             <source src="https://www.youtube.com/watch?v=kL8CyVqzmkc&list=PLqHvRUgeIyK-KwJKlDiUVJnMq40vXUAMH&index=8" type="audio/mpeg">
              </audio>
               
              <div id="commentbox">
-                 <div style="width:100%;height:100px;"></div>
                 <h5>Add a comment below</h5>
                 <div>
                     <p>Name-> <input id="viewername" type="text" name="" placeholder="Name"></p>
@@ -52,7 +51,7 @@
                     <div style="width:100%; height:5px;">
                     
                     </div>
-                    <button>sumit</button>
+                    <button id="submit">sumit</button>
                     <textarea id="viewercoment" placeholder="cooment here"></textarea>
                 </div>
             </div>
@@ -70,17 +69,17 @@
         
         
         <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
-            <script>
-              // Initialize Firebase
-              var config = {
-                apiKey: "AIzaSyDSot1ZXJrtugr7hUal5e4vW3nW7dP4aaA",
-                authDomain: "portfolio-cdb3b.firebaseapp.com",
-                databaseURL: "https://portfolio-cdb3b.firebaseio.com",
-                projectId: "portfolio-cdb3b",
-                storageBucket: "portfolio-cdb3b.appspot.com",
-                messagingSenderId: "518385709608"
-              };
-              firebase.initializeApp(config);
-            </script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyDSot1ZXJrtugr7hUal5e4vW3nW7dP4aaA",
+            authDomain: "portfolio-cdb3b.firebaseapp.com",
+            databaseURL: "https://portfolio-cdb3b.firebaseio.com",
+            projectId: "portfolio-cdb3b",
+            storageBucket: "portfolio-cdb3b.appspot.com",
+            messagingSenderId: "518385709608"
+          };
+          firebase.initializeApp(config);
+        </script>
     </body>
 </html>
