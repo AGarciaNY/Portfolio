@@ -72,10 +72,28 @@
   
   
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .navseparater{
     height:150px;
+}
+.commentsbox{
+  border:1px;
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top:120px;
+  left: 40%;
+  overflow-y: scroll;
+  
+}
+.comentholder{
+  font-family: 'Neucha', cursive;
+}
+.postedname{
+}
+.postedcomm2ent{
+  border:1px solid black;
+  
 }
