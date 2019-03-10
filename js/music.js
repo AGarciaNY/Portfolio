@@ -42,12 +42,7 @@ databaseRef.once("value").then(function(snapshot) {
         var uname = directory[key].name;
         var umail = directory[key].mail;
         var ucomment = directory[key].comment;
-        $("#commentsbox").html(
-            
-            "<h1></h1>"
-            ""
-            ""
-            );
+        $("#commentsbox").html("<h1>himan</h1>");
     }
 });
 
