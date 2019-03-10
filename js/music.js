@@ -39,13 +39,15 @@ databaseRef.once("value").then(function(snapshot) {
  console.log(directory);
     for(var key in directory){
         console.log(key);
-        console.log(directory[key].name);
-        var uname = directory[key].name.name;
-        var umail = directory[key].name.mail;
-        var ucomment = directory[key].name.comment;
-        console.log(uname);
-        console.log(umail);
-        console.log(ucomment);
+        var uname = directory[key].name;
+        var umail = directory[key].mail;
+        var ucomment = directory[key].comment;
+        $("#commentsbox").html(
+            
+            "<h1></h1>"
+            ""
+            ""
+            );
     }
 });
 
@@ -53,10 +55,16 @@ $("#submit").click(function(){
             var name1=$("#viewername").val();
             var mail1=$("#viewermail").val();
             var comment1=$("#viewercoment").val();
+            
+            var sname=name1.split("");
+            var smail=mail1.split("");
             var scomment=comment1.split(" ");
+            
+            var namelegth=sname.length;
+            var maillegth=smail.length;
             var comle=scomment.length;
             
-            if(comle >10){
+            if(comle < 10 || maillegth<4  || namelegth<4){
                 alert("no");
             }else{
                 databaseRef.push({
@@ -65,4 +73,5 @@ $("#submit").click(function(){
                     comment:comment1
                 });
             }
+    
 });
