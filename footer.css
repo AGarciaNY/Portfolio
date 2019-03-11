@@ -73,3 +73,41 @@
     top:100px;
     
 }
+.commentsbox{
+  border:1px;
+  width: 40%;
+  height: 200px;
+  position: absolute;
+  top:120px;
+  left: 40%;
+  overflow-y: scroll;
+  
+}
+.comentholder{
+  font-family: 'Neucha', cursive;
+  border-radius: 60px;
+  border:1px;
+  width: 80%;
+  background-image: url("https://us.123rf.com/450wm/ratanakhailee/ratanakhailee1708/ratanakhailee170800072/84993409-designed-white-to-grey-gradient-color-abstract-background.jpg?ver=6")
+  
+}
+.postedname{
+    position: relative;
+    left:30px;
+    top:15px;
+    width:70%;
+    background-color:black;
+    color:white;
+}
+.webcomment{
+    position: relative;
+    top:-10px;
+    left:4px;
+}
+.postedcomm2ent{
+  border:1px solid black;
+  border-radius:10px;
+  width: 80%;
+  position: relative;
+  left:20px;
+}

@@ -46,7 +46,7 @@ databaseRef.once("value").then(function(snapshot) {
             "<div class='comentholder'>"+
             "<h3 class='postedname'>Comment by:"+uname+"</h3>"+
             "<div class='postedcomm2ent'>"+
-                "<h4>"+ucomment+"</h4>"+
+                "<h4 class='webcomment'>"+ucomment+"</h4>"+
             "</div>"+
             "<div style='height:10px;'></div>"+
             "<hr style='height:.1px;border:.5px solid black;'>"+
