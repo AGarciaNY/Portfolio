@@ -86,9 +86,9 @@
 .comentholder{
   font-family: 'Neucha', cursive;
   border-radius: 60px;
-  border:1px;
-  width: 80%;
-  background-color:white;
+  border:3px solid #E9E9E9;
+  width: 95%;
+  background-color:#E1E1E1;
   
 }
 .postedname{
@@ -111,3 +111,18 @@
   position: relative;
   left:20px;
 }
+.cloudone{
+    position: absolute;
+    border-radius: 20px;
+    background-image:linear-gradient(to bottom,#F7F7F7,#F7F7F7,#F7F7F7,#F7F7F7 ,#F7F7F7,transparent);
+    width:45%;
+    height:150px;
+    left:35%;
+    top:200px;
+}
+.cloudtwo{}
+.cloudthee{}
+.cloudfore{}
+.cloudfive{}
+.cloudsix{}
+.cloudseven{}
