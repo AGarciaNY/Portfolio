@@ -111,18 +111,18 @@
   position: relative;
   left:20px;
 }
-.cloudone{
-    position: absolute;
-    border-radius: 20px;
-    background-image:linear-gradient(to bottom,#F7F7F7,#F7F7F7,#F7F7F7,#F7F7F7 ,#F7F7F7,transparent);
-    width:45%;
-    height:150px;
-    left:35%;
-    top:200px;
-}
-.cloudtwo{}
-.cloudthee{}
-.cloudfore{}
-.cloudfive{}
-.cloudsix{}
-.cloudseven{}
+/*.cloudone{*/
+/*    position: absolute;*/
+/*    border-radius: 20px;*/
+/*    background-image:linear-gradient(to bottom,#F7F7F7,#F7F7F7,#F7F7F7,#F7F7F7 ,#F7F7F7,transparent);*/
+/*    width:45%;*/
+/*    height:150px;*/
+/*    left:35%;*/
+/*    top:200px;*/
+/*}*/
+/*.cloudtwo{}*/
+/*.cloudthee{}*/
+/*.cloudfore{}*/
+/*.cloudfive{}*/
+/*.cloudsix{}*/
+/*.cloudseven{}*/
