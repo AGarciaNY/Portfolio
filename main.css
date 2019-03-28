@@ -33,7 +33,7 @@ html,body{
 .buckets div {
   position: absolute;
   animation: bucket_rotate 200s infinite linear;
-  top: 65%;
+  top: 70%;
   left: 45%;
   
 }
