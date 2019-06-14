@@ -32,18 +32,16 @@ html,body{
 
 .buckets div {
   position: absolute;
-  animation: bucket_rotate 200s infinite linear;
-  top: 70%;
-  left: 45%;
+  animation: bucket_rotate 500s infinite linear;
   
 }
 
 @keyframes bucket_rotate {
   0% { 
-    transform: rotate(0) translateX(550px) rotate(0); 
+    transform: rotate(0) translateX(700px) rotate(0); 
   }
-  70% {
-    transform: rotate(350deg) translateX(550px) rotate(-360deg); 
+  100% {
+    transform: rotate(360deg) translateX(700px) rotate(-360deg); 
   }
 }
 
@@ -52,37 +50,37 @@ html,body{
   
 }
 .buckets div:nth-child(2) {
-  animation-delay: -25s;
+  animation-delay: -62.5s;
   width: 200px;
 }
 
 .buckets div:nth-child(3) {
-  animation-delay: -50s;
-  width: 200px;
-}
-
-.buckets div:nth-child(4) {
-  animation-delay: -75s;
-  width: 200px;
-}
-
-.buckets div:nth-child(5) {
-  animation-delay: -100s;
-  width:200px;
-}
-
-.buckets div:nth-child(6) {
   animation-delay: -125s;
   width: 200px;
 }
 
+.buckets div:nth-child(4) {
+  animation-delay: -187.5s;
+  width: 200px;
+}
+
+.buckets div:nth-child(5) {
+  animation-delay: -250s;
+  width:200px;
+}
+
+.buckets div:nth-child(6) {
+  animation-delay: -312.5s;
+  width: 200px;
+}
+
 .buckets div:nth-child(7) {
-  animation-delay: -150s;
+  animation-delay: -375s;
   width: 200px;
 }
 
 .buckets div:nth-child(8) {
-  animation-delay: -175s;
+  animation-delay: -437.5s;
   width: 200px;
 }
 .separater{
@@ -90,6 +88,9 @@ html,body{
 }
 #body{
   height:700px;
+  position: absolute;
+  top: 70%;
+  left:-100px;
 }
 
 
