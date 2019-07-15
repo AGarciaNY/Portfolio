@@ -71,13 +71,25 @@
             </div>
      
             <!-- The core Firebase JS SDK is always required and must be listed first -->
-            <script src="/__/firebase/6.3.0/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
             <!-- TODO: Add SDKs for Firebase products that you want to use
-                 https://firebase.google.com/docs/web/setup#reserved-urls -->
+                 https://firebase.google.com/docs/web/setup#config-web-app -->
 
-            <!-- Initialize Firebase -->
-            <script src="/__/firebase/init.js"></script>
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyBLLsjyl3LJ099bPY9qJK9CdvuAPwXtB4s",
+                authDomain: "testone-f07fe.firebaseapp.com",
+                databaseURL: "https://testone-f07fe.firebaseio.com",
+                projectId: "testone-f07fe",
+                storageBucket: "",
+                messagingSenderId: "933538865882",
+                appId: "1:933538865882:web:f3e3832455637efd"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+            </script>
             
     </body>
 </html>
