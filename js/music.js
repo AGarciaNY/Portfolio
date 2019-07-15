@@ -29,7 +29,7 @@ $(".playstop").click(function(){
         }
     });
     
-var database = firebase-app.database();
+var database = firebase.database();
 var databaseRef = database.ref("/");
 
 // Read the data from the database and take a snapshot of that data.
