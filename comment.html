@@ -71,13 +71,25 @@
             </div>
      
             <!-- The core Firebase JS SDK is always required and must be listed first -->
-            <script src="/__/firebase/6.3.0/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 
             <!-- TODO: Add SDKs for Firebase products that you want to use
-                 https://firebase.google.com/docs/web/setup#reserved-urls -->
+                https://firebase.google.com/docs/web/setup#config-web-app -->
 
-            <!-- Initialize Firebase -->
-            <script src="/__/firebase/init.js"></script>
+            <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBmejGBoMWLCGxmb1dgNwbUV0uc8147roI",
+                authDomain: "portfolio-ab382.firebaseapp.com",
+                databaseURL: "https://portfolio-ab382.firebaseio.com",
+                projectId: "portfolio-ab382",
+                storageBucket: "",
+                messagingSenderId: "525784649833",
+                appId: "1:525784649833:web:516cf1f259a4bb95"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            </script>
             
     </body>
 </html>
