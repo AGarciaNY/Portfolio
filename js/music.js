@@ -1,7 +1,58 @@
 /*global $*/
-/*global firebase*/
-/*glodal location*/
+// Get a reference to the database service
+var database = firebase.database();
+var databaseRef = database.ref("/");
 
+// Read the data from the database and take a snapshot of that data.
+databaseRef.once("value").then(function(snapshot) {
+ // Use .val() to get the data from the snapshot.
+ const directory = snapshot.val();
+ console.log(directory);
+    for(var key in directory){
+        console.log(key);
+        var uname = directory[key].name;
+        // var umail = directory[key].mail;
+        var ucomment = directory[key].comment;
+        $(".commentsbox").append(
+            "<div class='comentholder'>"+
+            "<h3 class='postedname'>Comment by:"+uname+"</h3>"+
+            "<div class='postedcomm2ent'>"+
+                "<h4 class='webcomment'>"+ucomment+"</h4>"+
+            "</div>"+
+            "<div style='height:20px;'></div>"+
+            "<hr style='height:.1px;border:.5px solid black;'>"+
+        "</div>"
+            );
+    }
+var runer="testing";
+
+$("#submit").click(function(){
+            console.log(runer);
+            var name1=$("#viewername").val();
+            var mail1=$("#viewermail").val();
+            var comment1=$("#viewercoment").val();
+            
+            var sname=name1.split("");
+            var smail=mail1.split("");
+            var scomment=comment1.split(" ");
+            
+            var namelegth=sname.length;
+            var maillegth=smail.length;
+            var comle=scomment.length;
+            
+             if(comle < 10 || maillegth<3  || namelegth<3){
+                 alert("no");
+            }else{
+                databaseRef.push({
+                    name:name1,
+                    mail:mail1,
+                    comment:comment1
+                });
+                location.reload();
+            }
+    
+    });
+});
 
 var x = document.getElementById("myAudio");
 
@@ -29,55 +80,3 @@ $(".playstop").click(function(){
         }
     });
     
-var database = firebase.database();
-var databaseRef = database.ref("/");
-
-// Read the data from the database and take a snapshot of that data.
-databaseRef.once("value").then(function(snapshot) {
- // Use .val() to get the data from the snapshot.
- const directory = snapshot.val();
- console.log(directory);
-    for(var key in directory){
-        console.log(key);
-        var uname = directory[key].name;
-        // var umail = directory[key].mail;
-        var ucomment = directory[key].comment;
-        $(".commentsbox").append(
-            "<div class='comentholder'>"+
-            "<h3 class='postedname'>Comment by:"+uname+"</h3>"+
-            "<div class='postedcomm2ent'>"+
-                "<h4 class='webcomment'>"+ucomment+"</h4>"+
-            "</div>"+
-            "<div style='height:20px;'></div>"+
-            "<hr style='height:.1px;border:.5px solid black;'>"+
-        "</div>"
-            );
-    }
-
-
-$("#submit").click(function(){
-            var name1=$("#viewername").val();
-            var mail1=$("#viewermail").val();
-            var comment1=$("#viewercoment").val();
-            
-            var sname=name1.split("");
-            var smail=mail1.split("");
-            var scomment=comment1.split(" ");
-            
-            var namelegth=sname.length;
-            var maillegth=smail.length;
-            var comle=scomment.length;
-            
-            if(comle < 10 || maillegth<3  || namelegth<3){
-                alert("no");
-            }else{
-                databaseRef.push({
-                    name:name1,
-                    mail:mail1,
-                    comment:comment1
-                });
-                location.reload();
-            }
-    
-    });
-});
